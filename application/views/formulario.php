@@ -20,12 +20,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <li class="tab" ><img src="https://i.imgur.com/LCCJ06E.png" alt="" class="icon"/></li>
     </ul>
     
-    <form class="form">
+     <?php echo form_open("Welcome/validar")?>
+     
       <input type="text" placeholder="primer nombre" class="textbox" name="nombres" />
       <input type="text" placeholder="Apellido" class="textbox" name="apellidos"/>
       <input type="text" placeholder="Direccion de Email" class="textbox" name="direccion"/>
       <input type="button" value="Next" class="button" />
-    </form>
+      
+  <?php echo form_close() ?>
   </div>
 </div>
 
