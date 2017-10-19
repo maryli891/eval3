@@ -21,11 +21,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </ul>
     
      <?php echo form_open("Welcome/validar")?>
-     
+
       <input type="text" placeholder="primer nombre" class="textbox" name="nombres" />
       <input type="text" placeholder="Apellido" class="textbox" name="apellidos"/>
-      <input type="text" placeholder="Direccion de Email" class="textbox" name="direccion"/>
-      <input type="button" value="Next" class="button" />
+      <input type="text" placeholder="Direccion de Email" class="textbox" name="correo"/>
+      <input type="submit" value="Next" class="button" />
       
   <?php echo form_close() ?>
   </div>

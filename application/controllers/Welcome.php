@@ -13,4 +13,21 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('formulario');
 	}
+
+function validar()
+
+{
+
+		$name = $this->input->post('nombres');
+		$lastname = $this->input->post('apellidos');
+		$email= $this->input->post('correo');
+
+echo "Nombre:".$name."Apellido: ".$lastname. "correo:".$email;
+$data = array('nombre' => $this->input->post('nombres'),'apellido'  => $this->input->post('apellidos') => $this->input->post('correo') );
+		// Aqui se llama la funcion para guardar en la BD
+		$this->form_model->guardar($data);
+//}
 }
+
+}
+?>
