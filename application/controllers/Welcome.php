@@ -23,7 +23,8 @@ function validar()
 		$email= $this->input->post('correo');
 
 echo "Nombre:".$name."Apellido: ".$lastname. "correo:".$email;
-$data = array('nombre' => $this->input->post('nombres'),'apellido'  => $this->input->post('apellidos') => $this->input->post('correo') );
+
+$data = array('nombre' => $this->input->post('nombres'),'apellido'  => $this->input->post('apellidos'), 'correo'=> $this->input->post('correo') );
 		// Aqui se llama la funcion para guardar en la BD
 		$this->form_model->guardar($data);
 //}
